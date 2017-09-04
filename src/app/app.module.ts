@@ -14,6 +14,10 @@ import { BigtoAlertComponent } from './bigto-alert/bigto-alert.component';
 import { RouterModule, Routes} from "@angular/router";
 import { BigtoHomeComponent } from './bigto-home/bigto-home.component';
 import { BigtoLoginComponent } from './bigto-login/bigto-login.component';
+import {AngularFireModule} from "angularfire2";
+import {environment} from "../environments/environment";
+import {AngularFireAuthModule} from "angularfire2/auth";
+import {AngularFireDatabaseModule} from "angularfire2/database";
 
 const appRoutes: Routes = [
   { path: 'graph', component: BigtoGraphComponent },
@@ -46,7 +50,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } // <-- debugging purpose only
-    )
+    ),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   providers: [BigtoService],
   bootstrap: [AppComponent]
