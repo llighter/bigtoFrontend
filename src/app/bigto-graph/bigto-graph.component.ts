@@ -12,6 +12,7 @@ export class BigtoGraphComponent implements OnInit {
   @ViewChild('myChart') myChart;
 
   mySpec: Spec;
+  mySpecList: Array<Spec>;
 
   krmodels: Array<string>;
   gbs: Array<string>;
@@ -58,7 +59,8 @@ export class BigtoGraphComponent implements OnInit {
   constructor(private bigtoService: BigtoService) { }
 
   ngOnInit() {
-    this.mySpec = new Spec();
+    this.mySpec = new Spec('', '', '', '');
+    this.mySpecList = new Array<Spec>();
 
     this.bigtoService.getKrmodels().subscribe(data => {
       this.krmodels = data['krnameList'];
@@ -80,6 +82,8 @@ export class BigtoGraphComponent implements OnInit {
       this.config.data.labels = data['labels'];
       this.config.data.datasets[0].data = data['data'];
 
+      // this.mySpecList.push(this.mySpec);
+      this.mySpecList.push(new Spec(this.mySpec.krmodel, this.mySpec.gb, this.mySpec.conditions, this.mySpec.changes));
       this.myChart.update();
     });
   }

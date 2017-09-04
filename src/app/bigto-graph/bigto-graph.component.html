@@ -37,6 +37,12 @@
     </form>
   </div>
 </div>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <app-bigto-alert *ngFor="let mySpec of mySpecList"
+      [spec]="mySpec"></app-bigto-alert>
+  </div>
+</div>
 
 <div class="row">
   <div class="col-md-8 col-md-offset-2">

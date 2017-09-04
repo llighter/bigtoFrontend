@@ -10,13 +10,15 @@ import { FormsModule } from '@angular/forms';
 import { MdSelectModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { BigtoService } from "./shared/bigto.service";
+import { BigtoAlertComponent } from './bigto-alert/bigto-alert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BigtoNavComponent,
     BigtoFooterComponent,
-    BigtoGraphComponent
+    BigtoGraphComponent,
+    BigtoAlertComponent
   ],
   imports: [
     BrowserModule,
