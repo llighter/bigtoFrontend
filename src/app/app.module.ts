@@ -13,6 +13,7 @@ import { BigtoService } from "./shared/bigto.service";
 import { BigtoAlertComponent } from './bigto-alert/bigto-alert.component';
 import { RouterModule, Routes} from "@angular/router";
 import { BigtoHomeComponent } from './bigto-home/bigto-home.component';
+import { BigtoLoginComponent } from './bigto-login/bigto-login.component';
 
 const appRoutes: Routes = [
   { path: 'graph', component: BigtoGraphComponent },
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     BigtoFooterComponent,
     BigtoGraphComponent,
     BigtoAlertComponent,
-    BigtoHomeComponent
+    BigtoHomeComponent,
+    BigtoLoginComponent
   ],
   imports: [
     BrowserModule,
