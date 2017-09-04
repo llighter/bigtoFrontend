@@ -19,7 +19,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "assets/fonts/ionicons.min.css",
+        "assets/css/Article-List.css",
+        "assets/css/Footer-Clean.css",
+        "assets/css/Navigation-with-Search1.css",
+        "assets/css/styles.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
