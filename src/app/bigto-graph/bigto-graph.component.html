@@ -1,5 +1,45 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
+    <form>
+      <select [(ngModel)]="mySpec.krmodel" name="krmodel" (change)="onSelectKrmodel()">
+        <optgroup label="모델명">
+          <option *ngFor="let krmodel of krmodels" [value]="krmodel">
+            {{krmodel}}
+          </option>
+        </optgroup>
+      </select>
+
+      <select [(ngModel)]="mySpec.gb" name="gb" (change)="onSelectGb()">
+        <optgroup label="용량 선택">
+          <option *ngFor="let gb of gbs" [value]="gb">
+            {{gb}}
+          </option>
+        </optgroup>
+      </select>
+
+      <select [(ngModel)]="mySpec.conditions" name="conditions" (change)="onSelectConditions()">
+        <optgroup label="상태 선택">
+          <option *ngFor="let condition of conditions" [value]="condition">
+            {{condition}}
+          </option>
+        </optgroup>
+      </select>
+
+      <select [(ngModel)]="mySpec.changes" name="changes">
+        <optgroup label="기변 상태 선택">
+          <option *ngFor="let change of changes" [value]="change">
+            {{change}}
+          </option>
+        </optgroup>
+      </select>
+
+      <button class="btn btn-success" (click)="add()">추가</button>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
     <canvas #myChart width="200px" height="100px"></canvas>
   </div>
 </div>
