@@ -7,7 +7,7 @@ import { BigtoFooterComponent } from './bigto-footer/bigto-footer.component';
 import { BigtoGraphComponent } from './bigto-graph/bigto-graph.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { MdSelectModule } from '@angular/material';
+import {MdDatepickerModule, MdNativeDateModule, MdSelectModule} from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { BigtoService } from "./shared/bigto.service";
 import { BigtoAlertComponent } from './bigto-alert/bigto-alert.component';
@@ -25,6 +25,8 @@ import { BigtoAlertComponent } from './bigto-alert/bigto-alert.component';
     FormsModule,
     BrowserAnimationsModule,
     MdSelectModule,
+    MdDatepickerModule,
+    MdNativeDateModule,
     HttpClientModule
   ],
   providers: [BigtoService],

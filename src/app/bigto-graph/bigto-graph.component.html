@@ -1,37 +1,48 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <form>
-      <select [(ngModel)]="mySpec.krmodel" name="krmodel" (change)="onSelectKrmodel()">
-        <optgroup label="모델명">
-          <option *ngFor="let krmodel of krmodels" [value]="krmodel">
+      <md-select placeholder="모델" [(ngModel)]="mySpec.krmodel" name="krmodel" (change)="onSelectKrmodel()">
+        <md-optgroup label="모델명">
+          <md-option *ngFor="let krmodel of krmodels" [value]="krmodel">
             {{krmodel}}
-          </option>
-        </optgroup>
-      </select>
+          </md-option>
+        </md-optgroup>
+      </md-select>
 
-      <select [(ngModel)]="mySpec.gb" name="gb" (change)="onSelectGb()">
-        <optgroup label="용량 선택">
-          <option *ngFor="let gb of gbs" [value]="gb">
+      <md-select placeholder="용량" [(ngModel)]="mySpec.gb" name="gb" (change)="onSelectGb()">
+        <md-optgroup label="용량 선택">
+          <md-option *ngFor="let gb of gbs" [value]="gb">
             {{gb}}
-          </option>
-        </optgroup>
-      </select>
+          </md-option>
+        </md-optgroup>
+      </md-select>
 
-      <select [(ngModel)]="mySpec.conditions" name="conditions" (change)="onSelectConditions()">
-        <optgroup label="상태 선택">
-          <option *ngFor="let condition of conditions" [value]="condition">
+      <md-select placeholder="상태" [(ngModel)]="mySpec.conditions" name="conditions" (change)="onSelectConditions()">
+        <md-optgroup label="상태 선택">
+          <md-option *ngFor="let condition of conditions" [value]="condition">
             {{condition}}
-          </option>
-        </optgroup>
-      </select>
+          </md-option>
+        </md-optgroup>
+      </md-select>
 
-      <select [(ngModel)]="mySpec.changes" name="changes">
-        <optgroup label="기변 상태 선택">
-          <option *ngFor="let change of changes" [value]="change">
+      <md-select placeholder="기" [(ngModel)]="mySpec.changes" name="changes">
+        <md-optgroup label="기변 상태 선택">
+          <md-option *ngFor="let change of changes" [value]="change">
             {{change}}
-          </option>
-        </optgroup>
-      </select>
+          </md-option>
+        </md-optgroup>
+      </md-select>
+
+      <md-form-field>
+        <input mdInput [mdDatepicker]="picker" placeholder="시작일 선택" (dateInput)="onStart($event)">
+        <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+        <md-datepicker #picker></md-datepicker>
+      </md-form-field>
+      <md-form-field>
+        <input mdInput [mdDatepicker]="picker2" placeholder="종료일 선택" (dateInput)="onEnd($event)">
+        <md-datepicker-toggle mdSuffix [for]="picker2"></md-datepicker-toggle>
+        <md-datepicker #picker2></md-datepicker>
+      </md-form-field>
 
       <button class="btn btn-success" (click)="add()">추가</button>
     </form>
