@@ -5,8 +5,8 @@ import {Spec} from "../core/models/spec";
 
 @Injectable()
 export class BigtoService {
-  // API_URL:string = `http://35.200.122.168/bigto3`;
-  API_URL:string = `http://localhost:8050`;
+  API_URL:string = `http://35.200.122.168/bigto3`;
+  // API_URL:string = `http://localhost:8050`;
 
   constructor(private http: HttpClient) { }
 

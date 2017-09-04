@@ -7,10 +7,21 @@ import { BigtoFooterComponent } from './bigto-footer/bigto-footer.component';
 import { BigtoGraphComponent } from './bigto-graph/bigto-graph.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import {MdDatepickerModule, MdNativeDateModule, MdSelectModule} from '@angular/material';
+import { MdButtonModule, MdDatepickerModule, MdNativeDateModule, MdSelectModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { BigtoService } from "./shared/bigto.service";
 import { BigtoAlertComponent } from './bigto-alert/bigto-alert.component';
+import { RouterModule, Routes} from "@angular/router";
+import { BigtoHomeComponent } from './bigto-home/bigto-home.component';
+
+const appRoutes: Routes = [
+  { path: 'graph', component: BigtoGraphComponent },
+  { path: 'home', component: BigtoHomeComponent },
+  { path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+];
 
 @NgModule({
   declarations: [
@@ -18,16 +29,22 @@ import { BigtoAlertComponent } from './bigto-alert/bigto-alert.component';
     BigtoNavComponent,
     BigtoFooterComponent,
     BigtoGraphComponent,
-    BigtoAlertComponent
+    BigtoAlertComponent,
+    BigtoHomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    MdButtonModule,
     MdSelectModule,
     MdDatepickerModule,
     MdNativeDateModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: false } // <-- debugging purpose only
+    )
   ],
   providers: [BigtoService],
   bootstrap: [AppComponent]

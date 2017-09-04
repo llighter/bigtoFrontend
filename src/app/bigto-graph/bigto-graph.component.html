@@ -1,3 +1,6 @@
+<div>
+  <app-bigto-nav></app-bigto-nav>
+</div>
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <form>
@@ -25,7 +28,7 @@
         </md-optgroup>
       </md-select>
 
-      <md-select placeholder="기" [(ngModel)]="mySpec.changes" name="changes">
+      <md-select placeholder="기변" [(ngModel)]="mySpec.changes" name="changes">
         <md-optgroup label="기변 상태 선택">
           <md-option *ngFor="let change of changes" [value]="change">
             {{change}}
@@ -44,7 +47,7 @@
         <md-datepicker #picker2></md-datepicker>
       </md-form-field>
 
-      <button class="btn btn-success" (click)="add()">추가</button>
+      <button md-raised-button color="primary" (click)="add()">추가</button>
     </form>
   </div>
 </div>
