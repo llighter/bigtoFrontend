@@ -15,9 +15,9 @@ import { RouterModule, Routes} from "@angular/router";
 import { BigtoHomeComponent } from './bigto-home/bigto-home.component';
 import { BigtoLoginComponent } from './bigto-login/bigto-login.component';
 import {AngularFireModule} from "angularfire2";
-import {environment} from "../environments/environment";
 import {AngularFireAuthModule} from "angularfire2/auth";
 import {AngularFireDatabaseModule} from "angularfire2/database";
+import {environment} from "../environments/environment.prod";
 
 const appRoutes: Routes = [
   { path: 'graph', component: BigtoGraphComponent },
