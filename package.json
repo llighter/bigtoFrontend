@@ -7,8 +7,8 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "postbuild": "npm run deploy",
-    "predeploy": "rimraf ./src/main/resources && mkdirp ./src/main/resources", 
-    "deploy": "copyfiles -f dist/** ../src/main/resources/static",
+    "predeploy": "rimraf ./src/main/resources && mkdirp ./src/main/resources",
+    "deploy": "copyfiles -f dist/** docs/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
