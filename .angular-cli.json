@@ -32,7 +32,8 @@
         "assets/css/Login-Form-Dark.css"
       ],
       "scripts": [
-
+        "assets/js/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
