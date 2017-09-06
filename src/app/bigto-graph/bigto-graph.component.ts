@@ -19,6 +19,7 @@ export class BigtoGraphComponent implements OnInit {
   mySpec: Spec;
   mySpecList: Array<Spec>;
   datePipe: DatePipe;
+  type: number;
 
   krmodels: Array<string>;
   gbs: Array<string>;
@@ -35,7 +36,7 @@ export class BigtoGraphComponent implements OnInit {
 
   colorNames = Object.keys(chartColors);
 
-  config = {
+  config:any = {
     type: 'line',
     data: {
       labels: ["8/10", "8/11", "8/12", "8/13", "8/14", "8/15", "8/16"],
@@ -72,11 +73,12 @@ export class BigtoGraphComponent implements OnInit {
         events: ['click'],
       }
     }
-  }
+  };
 
   constructor(private bigtoService: BigtoService) { }
 
   ngOnInit() {
+    this.type = 1;
 
     this.mySpec = new Spec('', '', '', '');
     this.mySpecList = new Array<Spec>();
@@ -161,6 +163,10 @@ export class BigtoGraphComponent implements OnInit {
     if (this.current_end_date > this.end_date || isNullOrUndefined(this.end_date)) {
       this.end_date = this.current_end_date;
     }
+  }
+
+  onSelectType() {
+    console.log(`type is ${this.type}`);
   }
 
 }

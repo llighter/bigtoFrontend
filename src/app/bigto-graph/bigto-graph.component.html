@@ -3,6 +3,18 @@
 </div>
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
+    <md-select placeholder="분석 유형" [(ngModel)]="type" (change)="onSelectType()">
+      <md-optgroup label="모델명">
+        <md-option value="1">
+          날짜별 평균가격 조회
+        </md-option>
+        <md-option value="2">
+          날짜별 등록개수 조회
+        </md-option>
+      </md-optgroup>
+    </md-select>
+  </div>
+  <div class="col-md-8 col-md-offset-2">
     <form>
       <md-select placeholder="모델" [(ngModel)]="mySpec.krmodel" name="krmodel" (change)="onSelectKrmodel()">
         <md-optgroup label="모델명">
