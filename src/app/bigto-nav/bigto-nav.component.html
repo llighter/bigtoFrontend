@@ -18,7 +18,9 @@
           <input class="form-control search-field" type="search" name="search" id="search-field">
         </div>
       </form>
-      <a class="btn btn-default navbar-btn navbar-right action-button" role="button" href="#">Login </a></div>
+      <a class="btn btn-default navbar-btn navbar-right action-button" role="button" routerLink="/login" *ngIf="!isLoggedin">Login </a>
+      <a class="btn btn-default navbar-btn navbar-right action-button" role="button" (click)="logout()" *ngIf="isLoggedin">LogOut </a>
+    </div>
   </div>
 </nav>
 

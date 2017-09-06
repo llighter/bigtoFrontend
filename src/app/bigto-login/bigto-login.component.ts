@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthService} from "../shared/auth.service";
+import {AngularFireAuth} from "angularfire2/auth";
+import {Observable} from "rxjs/Observable";
+import * as firebase from 'firebase/app';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-bigto-login',
@@ -6,10 +11,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bigto-login.component.css']
 })
 export class BigtoLoginComponent implements OnInit {
+  user: Observable<firebase.User>;
 
-  constructor() { }
+  constructor(private authServie: AuthService, private afAuth: AngularFireAuth, private router: Router) { }
 
   ngOnInit() {
+    this.user = this.afAuth.authState;
+
+    // 바로 안넘어가지는 문제
+    this.user.subscribe((user: firebase.User) => {
+      alert(user.displayName);
+
+      if (user.displayName != null) {
+        this.router.navigate(['/home']);
+      }
+    });
+  }
+
+  login() {
+    this.authServie.login();
   }
 
 }

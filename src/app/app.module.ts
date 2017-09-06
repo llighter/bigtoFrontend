@@ -18,10 +18,12 @@ import {AngularFireModule} from "angularfire2";
 import {AngularFireAuthModule} from "angularfire2/auth";
 import {AngularFireDatabaseModule} from "angularfire2/database";
 import {environment} from "../environments/environment.prod";
+import {AuthService} from "./shared/auth.service";
 
 const appRoutes: Routes = [
   { path: 'graph', component: BigtoGraphComponent },
   { path: 'home', component: BigtoHomeComponent },
+  { path: 'login', component: BigtoLoginComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -55,7 +57,7 @@ const appRoutes: Routes = [
     AngularFireAuthModule,
     AngularFireDatabaseModule
   ],
-  providers: [BigtoService],
+  providers: [BigtoService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
