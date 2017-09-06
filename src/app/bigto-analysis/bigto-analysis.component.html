@@ -2,14 +2,20 @@
   <app-bigto-nav></app-bigto-nav>
 </div>
 <div class="row">
-  <div class="col-md-offset-2 col-md-2">
+  <div class="col-md-offset-1 col-md-2">
     <ul class="nav nav-pills nav-stacked">
-      <li role="presentation" class="active"><a>Home</a></li>
-      <li role="presentation"><a>Profile</a></li>
-      <li role="presentation"><a>Messages</a></li>
+      <li role="presentation" [class.active]="numberOfReport == 1"><a (click)="select(1)">decision tree</a></li>
+      <li role="presentation" [class.active]="numberOfReport == 2"><a (click)="select(2)">Logistic Regression</a></li>
+      <li role="presentation" [class.active]="numberOfReport == 3"><a (click)="select(3)">Multiple Regression</a></li>
+      <li role="presentation" [class.active]="numberOfReport == 4"><a (click)="select(4)">Radar</a></li>
     </ul>
   </div>
-  <div class="col-md-6">
-    <h1>analysis...</h1>
+  <div class="col-md-8">
+
+    <app-report1 *ngIf="numberOfReport==1"></app-report1>
+    <app-report2 *ngIf="numberOfReport==2"></app-report2>
+    <app-report3 *ngIf="numberOfReport==3"></app-report3>
+    <app-report4 *ngIf="numberOfReport==4"></app-report4>
   </div>
+
 </div>

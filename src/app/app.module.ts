@@ -20,6 +20,10 @@ import {AngularFireDatabaseModule} from "angularfire2/database";
 import {environment} from "../environments/environment.prod";
 import {AuthService} from "./shared/auth.service";
 import { BigtoAnalysisComponent } from './bigto-analysis/bigto-analysis.component';
+import { Report1Component } from './report1/report1.component';
+import { Report2Component } from './report2/report2.component';
+import { Report3Component } from './report3/report3.component';
+import { Report4Component } from './report4/report4.component';
 
 const appRoutes: Routes = [
   { path: 'graph', component: BigtoGraphComponent },
@@ -41,7 +45,11 @@ const appRoutes: Routes = [
     BigtoAlertComponent,
     BigtoHomeComponent,
     BigtoLoginComponent,
-    BigtoAnalysisComponent
+    BigtoAnalysisComponent,
+    Report1Component,
+    Report2Component,
+    Report3Component,
+    Report4Component
   ],
   imports: [
     BrowserModule,

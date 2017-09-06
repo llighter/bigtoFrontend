@@ -19,7 +19,7 @@ export class BigtoNavComponent implements OnInit {
   ngOnInit() {
     this.user = this.afAuth.authState;
     this.user.subscribe((user: firebase.User) => {
-      if (user.displayName != null ) {
+      if (user != null ) {
         this.isLoggedin = true;
       } else {
         this.isLoggedin = false;

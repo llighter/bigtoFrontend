@@ -20,10 +20,10 @@ export class BigtoLoginComponent implements OnInit {
 
     // 바로 안넘어가지는 문제
     this.user.subscribe((user: firebase.User) => {
-      alert(user.displayName);
 
-      if (user.displayName != null) {
+      if (user != null) {
         this.router.navigate(['/home']);
+        alert(user.displayName);
       }
     });
   }

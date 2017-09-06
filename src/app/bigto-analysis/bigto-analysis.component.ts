@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bigto-analysis.component.css']
 })
 export class BigtoAnalysisComponent implements OnInit {
+  numberOfReport: number;
 
   constructor() { }
 
   ngOnInit() {
+    this.numberOfReport = 1;
+  }
+
+  select(index: number) {
+    this.numberOfReport = index;
   }
 
 }

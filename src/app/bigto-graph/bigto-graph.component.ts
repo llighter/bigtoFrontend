@@ -56,7 +56,7 @@ export class BigtoGraphComponent implements OnInit {
     },
     options: {
       responsive: true,
-      title:{
+      title: {
         display:true,
         text:'일자별 평균가격'
       },
@@ -99,6 +99,7 @@ export class BigtoGraphComponent implements OnInit {
       const colorName = this.colorNames[this.config.data.datasets.length % this.colorNames.length];
       const newColor = chartColors[colorName];
       const newDataSet = {
+        type: 'line',
         label: this.mySpec.krmodel,
         backgroundColor: newColor,
         borderColor: newColor,
