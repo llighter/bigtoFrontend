@@ -62,7 +62,8 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: false } // <-- debugging purpose only
+      { enableTracing: false, // <-- debugging purpose only
+               useHash: true }
     ),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,

@@ -1,0 +1,720 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">My app documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">My app documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/BigtoAlertComponent.html" >BigtoAlertComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/BigtoAnalysisComponent.html" >BigtoAnalysisComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/BigtoFooterComponent.html" >BigtoFooterComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/BigtoGraphComponent.html" >BigtoGraphComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/BigtoHomeComponent.html"  data-type="entity-link" class="active" >BigtoHomeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/BigtoLoginComponent.html" >BigtoLoginComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/BigtoNavComponent.html" >BigtoNavComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Report1Component.html" >Report1Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Report2Component.html" >Report2Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Report3Component.html" >Report3Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Report4Component.html" >Report4Component</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/AppPage.html" >AppPage</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/AuthService.html" >AuthService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/BigtoService.html" >BigtoService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">My app documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/BigtoAlertComponent.html" >BigtoAlertComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/BigtoAnalysisComponent.html" >BigtoAnalysisComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/BigtoFooterComponent.html" >BigtoFooterComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/BigtoGraphComponent.html" >BigtoGraphComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/BigtoHomeComponent.html"  data-type="entity-link" class="active" >BigtoHomeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/BigtoLoginComponent.html" >BigtoLoginComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/BigtoNavComponent.html" >BigtoNavComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Report1Component.html" >Report1Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Report2Component.html" >Report2Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Report3Component.html" >Report3Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Report4Component.html" >Report4Component</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/AppPage.html" >AppPage</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/AuthService.html" >AuthService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/BigtoService.html" >BigtoService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>BigtoHomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/bigto-home/bigto-home.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnInit-interface.html" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-bigto-home</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>bigto-home.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./bigto-home.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                 <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor()</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/bigto-home/bigto-home.component.ts:8</a></div>
+                                </td>
+                            </tr>
+    
+                </tbody>
+            </table>
+    </section>
+
+
+
+
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngOnInit"></a>
+                            <span class="name"><b> ngOnInit</b><a href="#ngOnInit"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngOnInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/bigto-home/bigto-home.component.ts:12</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-bigto-home&#x27;,
+  templateUrl: &#x27;./bigto-home.component.html&#x27;,
+  styleUrls: [&#x27;./bigto-home.component.css&#x27;]
+})
+export class BigtoHomeComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;header-blue&quot;&gt;
+  &lt;app-bigto-nav&gt;&lt;/app-bigto-nav&gt;
+
+  &lt;div class&#x3D;&quot;container hero&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0&quot;&gt;
+        &lt;h1&gt;당신은 얼마에 파시겠습니까?&lt;/h1&gt;
+        &lt;p&gt;이제 더 이상 즉흥적으로 팔거나 사지 마세요. 최고의 가격과 최고의 시기는 아직 다가오지 않았습니다&lt;/p&gt;
+        &lt;button class&#x3D;&quot;btn btn-default btn-lg action-button&quot; type&#x3D;&quot;button&quot;&gt;&lt;a routerLink&#x3D;&quot;/graph&quot;&gt;현황 보기&lt;/a&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 hidden-xs hidden-sm phone-holder&quot;&gt;
+        &lt;div class&#x3D;&quot;iphone-mockup&quot;&gt;&lt;img src&#x3D;&quot;assets/img/iphone.svg&quot; class&#x3D;&quot;device&quot;&gt;
+          &lt;div class&#x3D;&quot;screen&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;team-boxed&quot;&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;intro&quot;&gt;
+      &lt;h2 class&#x3D;&quot;text-center&quot;&gt;Team CTO&lt;/h2&gt;
+      &lt;p class&#x3D;&quot;text-center&quot;&gt;팀 CTO는 시작은 미약했으나 이제는 대단한 능력을 가진 사람들로 변모했다. 마지막까지 최선을 다하자.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row people&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-4 col-sm-6 item&quot;&gt;
+        &lt;div class&#x3D;&quot;box&quot;&gt;&lt;img class&#x3D;&quot;img-circle&quot; src&#x3D;&quot;assets/img/yunha.jpg&quot;&gt;
+          &lt;h3 class&#x3D;&quot;name&quot;&gt;박윤하&lt;/h3&gt;
+          &lt;p class&#x3D;&quot;title&quot;&gt;llighter(Team Leader)&lt;/p&gt;
+          &lt;p class&#x3D;&quot;description&quot;&gt;팀장으로 갖은 고초를 겪어가며 성장한 전형적인 자수성가 인재로 최신기술과 전공지식으로 무장한 인재다. &lt;/p&gt;
+          &lt;div class&#x3D;&quot;social&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-facebook-official&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-4 col-sm-6 item&quot;&gt;
+        &lt;div class&#x3D;&quot;box&quot;&gt;&lt;img class&#x3D;&quot;img-circle&quot; src&#x3D;&quot;assets/img/sin.jpg&quot;&gt;
+          &lt;h3 class&#x3D;&quot;name&quot;&gt;신관용&lt;/h3&gt;
+          &lt;p class&#x3D;&quot;title&quot;&gt;Frontend&lt;/p&gt;
+          &lt;p class&#x3D;&quot;description&quot;&gt;비전공으로 시작 수업을 버거워하며 구른 팀원 미적 감각이 없는데도 자꾸 디자잉ㄹ 파트를 하고 싶어 한다.&lt;/p&gt;
+          &lt;div class&#x3D;&quot;social&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-facebook-official&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-4 col-sm-6 item&quot;&gt;
+        &lt;div class&#x3D;&quot;box&quot;&gt;&lt;img class&#x3D;&quot;img-circle&quot; src&#x3D;&quot;assets/img/one.jpeg&quot;&gt;
+          &lt;h3 class&#x3D;&quot;name&quot;&gt;서종원&lt;/h3&gt;
+          &lt;p class&#x3D;&quot;title&quot;&gt;Server&lt;/p&gt;
+          &lt;p class&#x3D;&quot;description&quot;&gt;비주얼 담당부터 백엔드까지 익힌 풀스택 인재.
+            한번 일에 몰두하면, 다른 무엇도 눈에 들어오지 않는 스타일.
+            집중 후 회복기가 필요하다.&lt;/p&gt;
+          &lt;div class&#x3D;&quot;social&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-facebook-official&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row people col-md-offset-1&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-5 col-sm-6 item&quot;&gt;
+        &lt;div class&#x3D;&quot;box&quot;&gt;&lt;img class&#x3D;&quot;img-circle&quot; src&#x3D;&quot;assets/img/aa.jpeg&quot;&gt;
+          &lt;h3 class&#x3D;&quot;name&quot;&gt;배재현&lt;/h3&gt;
+          &lt;p class&#x3D;&quot;title&quot;&gt;Data Engineer&lt;/p&gt;
+          &lt;p class&#x3D;&quot;description&quot;&gt;데이터를 read하고 lead하는 sw개발자.&lt;/p&gt;
+          &lt;div class&#x3D;&quot;social&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-facebook-official&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-md-5 col-sm-6 item&quot;&gt;
+        &lt;div class&#x3D;&quot;box&quot;&gt;&lt;img class&#x3D;&quot;img-circle&quot; src&#x3D;&quot;assets/img/ss.jpeg&quot;&gt;
+          &lt;h3 class&#x3D;&quot;name&quot;&gt;서정효&lt;/h3&gt;
+          &lt;p class&#x3D;&quot;title&quot;&gt;Data Engineer&lt;/p&gt;
+          &lt;p class&#x3D;&quot;description&quot;&gt;데이터는 내가 책임진다&lt;/p&gt;
+          &lt;div class&#x3D;&quot;social&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-facebook-official&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="header-blue">  <app-bigto-nav></app-bigto-nav>  <div class="container hero">    <div class="row">      <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0">        <h1>당신은 얼마에 파시겠습니까?</h1>        <p>이제 더 이상 즉흥적으로 팔거나 사지 마세요. 최고의 가격과 최고의 시기는 아직 다가오지 않았습니다</p>        <button class="btn btn-default btn-lg action-button" type="button"><a routerLink="/graph">현황 보기</a></button>      </div>      <div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-1 hidden-xs hidden-sm phone-holder">        <div class="iphone-mockup"><img src="assets/img/iphone.svg" class="device">          <div class="screen"></div>        </div>      </div>    </div>  </div></div><div class="team-boxed">  <div class="container">    <div class="intro">      <h2 class="text-center">Team CTO</h2>      <p class="text-center">팀 CTO는 시작은 미약했으나 이제는 대단한 능력을 가진 사람들로 변모했다. 마지막까지 최선을 다하자.</p>    </div>    <div class="row people">      <div class="col-md-4 col-sm-6 item">        <div class="box"><img class="img-circle" src="assets/img/yunha.jpg">          <h3 class="name">박윤하</h3>          <p class="title">llighter(Team Leader)</p>          <p class="description">팀장으로 갖은 고초를 겪어가며 성장한 전형적인 자수성가 인재로 최신기술과 전공지식으로 무장한 인재다. </p>          <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>        </div>      </div>      <div class="col-md-4 col-sm-6 item">        <div class="box"><img class="img-circle" src="assets/img/sin.jpg">          <h3 class="name">신관용</h3>          <p class="title">Frontend</p>          <p class="description">비전공으로 시작 수업을 버거워하며 구른 팀원 미적 감각이 없는데도 자꾸 디자잉ㄹ 파트를 하고 싶어 한다.</p>          <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>        </div>      </div>      <div class="col-md-4 col-sm-6 item">        <div class="box"><img class="img-circle" src="assets/img/one.jpeg">          <h3 class="name">서종원</h3>          <p class="title">Server</p>          <p class="description">비주얼 담당부터 백엔드까지 익힌 풀스택 인재.            한번 일에 몰두하면, 다른 무엇도 눈에 들어오지 않는 스타일.            집중 후 회복기가 필요하다.</p>          <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>        </div>      </div>    </div>    <div class="row people col-md-offset-1">      <div class="col-md-5 col-sm-6 item">        <div class="box"><img class="img-circle" src="assets/img/aa.jpeg">          <h3 class="name">배재현</h3>          <p class="title">Data Engineer</p>          <p class="description">데이터를 read하고 lead하는 sw개발자.</p>          <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>        </div>      </div>      <div class="col-md-5 col-sm-6 item">        <div class="box"><img class="img-circle" src="assets/img/ss.jpeg">          <h3 class="name">서정효</h3>          <p class="title">Data Engineer</p>          <p class="description">데이터는 내가 책임진다</p>          <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>        </div>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BigtoAlertComponent', 'selector': 'app-bigto-alert'},{'name': 'BigtoAnalysisComponent', 'selector': 'app-bigto-analysis'},{'name': 'BigtoFooterComponent', 'selector': 'app-bigto-footer'},{'name': 'BigtoGraphComponent', 'selector': 'app-bigto-graph'},{'name': 'BigtoHomeComponent', 'selector': 'app-bigto-home'},{'name': 'BigtoLoginComponent', 'selector': 'app-bigto-login'},{'name': 'BigtoNavComponent', 'selector': 'app-bigto-nav'},{'name': 'Report1Component', 'selector': 'app-report1'},{'name': 'Report2Component', 'selector': 'app-report2'},{'name': 'Report3Component', 'selector': 'app-report3'},{'name': 'Report4Component', 'selector': 'app-report4'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'BigtoHomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>
